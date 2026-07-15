@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+        }
+        .child{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 2rem;
+            /*transform: translateX(50px);
+            transform: translateY(-20px);used to change size,shape,without affecting document layoout
+            transform: translate(50px,50px);
+            transform: translate3d(100px,200px,300px);*/
+            
+            /*transform:rotateX(180deg);turns element clockwise with  specified  degree
+            transform: rotateY(180deg);*/
+           /* transform: rotate(50deg);*/
+
+           /*transform: scaleX(1.5);
+           transform: scaleY(1.5);increase or decrease the size of an element
+           transform: scaleZ(2);
+            transform: scale(2);*/
+
+            /*transform: skewX(100deg);slants an element along the xaxis and y axis
+            transform: skewY(100deg);
+            transform: skew(100deg,100deg);*/
+
+            transform-origin: top right; 
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            child </div>
+    </div>
+</body>
+</html>

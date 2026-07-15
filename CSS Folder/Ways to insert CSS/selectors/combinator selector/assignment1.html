@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .parent h2{
+            background-color: rgb(147, 235, 215);
+        }
+    </style>
+    <style>
+        .father>h2{
+            background-color: rgb(145, 244, 201);
+        }
+    </style>
+    
+    <style>
+        h1+h2{
+            background-color:rgb(141, 240, 182);
+        }
+    </style>
+    <style>
+         h1~h3{
+            background-color: rgb(140, 255, 213);
+        }
+    </style>
+</head>
+<body>
+    <h1>Decendent Combinator</h1>
+    <div class="parent">
+        <div class="child">
+         <h2>Child</h2>
+         <h2>Child</h2>
+        </div>
+        <div class="child">
+            <ul><li><h2>Descendent</h2></li></ul>
+        </div>
+    </div><hr>
+    <h1>Child Combinator</h1>
+      <div class="father">
+           <h2>Child</h2>
+           <h2>Child</h2>
+           <div class="father">
+             <ul><li><h2>Descendent</h2></li></ul>
+           </div>
+           
+      </div>
+     <hr>
+      <div>
+        <h1>Adjacent sibling Combinator</h1>
+         <h2>First sibling</h2>
+         <h2>Second sibling</h2> 
+    </div><hr>
+        <div>
+        <h1>General sibling Combinator</h1>
+         <h3>First sibling</h3>
+         <h3>Second sibling</h3>
+        </div>
+     
+</body>
+</html>
